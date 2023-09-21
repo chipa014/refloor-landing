@@ -1,0 +1,13 @@
+.nav-item {
+  text-decoration: none;
+  color: var(--color-black);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}

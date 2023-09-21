@@ -1,0 +1,28 @@
+#body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #75b531;
+  --color-primary-dark: #527f22;
+  --color-grey: #888;
+  --color-grey-light: #eee;
+  --color-black: #000;
+  --color-white: #fff;
+
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 62.5%;
+
+  background-color: var(--color-white);
+  color: var(--color-grey);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}

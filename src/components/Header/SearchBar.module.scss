@@ -1,0 +1,38 @@
+.search {
+  display: flex;
+  align-items: center;
+  flex: 0 0 30%;
+  //   margin-left: 4rem;
+}
+
+.input {
+  border: none;
+  background-color: var(--color-grey-light);
+  padding: 1rem 1.5rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
+
+  flex: 1;
+
+  transition: padding 0.2s;
+
+  &:focus {
+    outline: none;
+    padding: 1.5rem 1.5rem;
+  }
+
+  &::placeholder {
+    color: var(--color-grey);
+  }
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  margin-left: -4rem;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
