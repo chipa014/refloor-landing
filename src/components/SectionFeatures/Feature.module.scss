@@ -1,0 +1,39 @@
+.feature {
+  flex: 0 0 30rem;
+  margin: 3rem;
+
+  display: grid;
+  background-color: transparent;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr;
+  gap: 2rem;
+
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+.icon {
+  grid-row: 1 / span 2;
+
+  fill: var(--color-primary);
+  width: 5rem;
+  height: 5rem;
+
+  transform: translateY(-1rem);
+
+  &-heat {
+    transform: translateY(-1rem) rotate(-90deg) scaleX(-1);
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  align-self: top;
+}

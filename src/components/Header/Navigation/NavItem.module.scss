@@ -1,13 +1,30 @@
 .nav-item {
-  text-decoration: none;
   color: var(--color-black);
-  font-size: 1.8rem;
-  font-weight: 600;
-  text-transform: uppercase;
+
+  position: relative;
+  display: flex;
 
   transition: color 0.2s;
 
   &:hover {
     color: var(--color-primary);
+
+    & .dropdown {
+      display: flex;
+    }
   }
+}
+
+.link {
+  padding: 3rem 0;
+  align-self: stretch;
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.dropdown {
+  display: none;
 }

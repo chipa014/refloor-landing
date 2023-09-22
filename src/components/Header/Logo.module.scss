@@ -1,4 +1,11 @@
+.container {
+  // flex: 0 0 20%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
 .logo {
   max-width: 20rem;
-  flex: 0 0 20%;
+  align-self: center;
 }

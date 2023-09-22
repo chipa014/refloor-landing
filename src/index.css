@@ -1,4 +1,4 @@
-#body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,9 +7,10 @@
 :root {
   --color-primary: #75b531;
   --color-primary-dark: #527f22;
+  --color-black: #000;
+  --color-grey-dark: #444;
   --color-grey: #888;
   --color-grey-light: #eee;
-  --color-black: #000;
   --color-white: #fff;
 
   font-family: Ubuntu, Arial, Helvetica, sans-serif;

@@ -1,3 +1,5 @@
+import Button from "../UI/Button";
+
 import styles from "./Slide.module.scss";
 
 const Slide = function (props) {
@@ -15,7 +17,7 @@ const Slide = function (props) {
       <div className={styles.content}>
         <h1 className={styles.title}>{slide.title}</h1>
         <p className={styles.paragraph}>{slide.paragraph}</p>
-        <button className={styles.btn}>{slide.btnText}</button>
+        <Button>{slide.btnText}</Button>
       </div>
     </div>
   );

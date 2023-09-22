@@ -1,9 +1,15 @@
 .nav {
-  flex: 0 0 30%;
+  flex: 0 0 40%;
   margin-right: 4rem;
+  display: flex;
+  align-items: stretch;
 }
 
 .list {
+  flex: 1;
   display: flex;
   justify-content: space-around;
+  align-items: stretch;
+
+  list-style: none;
 }
