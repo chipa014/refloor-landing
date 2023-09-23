@@ -1,4 +1,4 @@
-import ItemCard from "./ItemCard";
+import ItemCard from "./ItemCard/ItemCard";
 
 import styles from "./NewItems.module.scss";
 
@@ -7,7 +7,7 @@ const NewItems = function (props) {
   return (
     <div className={styles.container}>
       {items.map((item) => (
-        <ItemCard itemData={item} />
+        <ItemCard itemData={item} key={item.src} />
       ))}
     </div>
   );

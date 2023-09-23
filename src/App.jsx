@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import Header from "./components/Header/Header";
+import SectionCompany from "./components/SectionCompany/SectionCompany";
 import SectionFeatures from "./components/SectionFeatures/SectionFeatures";
 import SectionGallery from "./components/SectionGallery/SectionGallery";
 import SectionNew from "./components/SectionNew/SectionNew";
@@ -15,6 +16,7 @@ function App() {
       <SectionFeatures />
       <SectionGallery />
       <SectionNew />
+      <SectionCompany />
     </Fragment>
   );
 }

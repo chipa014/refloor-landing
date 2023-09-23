@@ -1,0 +1,62 @@
+.icon-button {
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 2px;
+  margin: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  &--inactive {
+    background-color: var(--color-white);
+    //Opacity animation is happening in ItemCard
+    opacity: 0;
+
+    .icon {
+      fill: var(--color-grey);
+    }
+
+    &:hover {
+      background-color: var(--color-grey-light);
+
+      .icon {
+        fill: var(--color-grey-dark);
+      }
+    }
+  }
+
+  &--active {
+    background-color: var(--color-primary);
+    //Opacity animation is happening in ItemCard
+    opacity: 0.5;
+
+    .icon {
+      fill: var(--color-white);
+    }
+
+    &:hover {
+      background-color: var(--color-primary-medium-dark);
+
+      .icon {
+        fill: var(--color-grey-light);
+      }
+    }
+  }
+}
+
+.icon {
+  height: 1.8rem;
+  width: 1.8rem;
+
+  transition: all 0.2s;
+}

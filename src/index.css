@@ -6,13 +6,16 @@
 
 :root {
   --color-primary: #75b531;
+  --color-primary-medium-dark: #69a32c;
   --color-primary-dark: #527f22;
   --color-black: #000;
-  --color-grey-dark: #444;
+  --color-grey-darker: #333;
+  --color-grey-dark: #555;
   --color-grey: #888;
   --color-grey-light: #eee;
   --color-grey-lighter: #f8f8f8;
   --color-white: #fff;
+  --color-shadow: #0004;
 
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
   line-height: 1.5;

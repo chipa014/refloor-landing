@@ -1,6 +1,6 @@
 .card {
   flex: 0 0 25rem;
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 5rem 3rem;
   border-radius: 2px;
 
   display: flex;
@@ -9,8 +9,27 @@
 
   background-color: var(--color-white);
 
+  transform: translateY(0);
+  box-shadow: none;
+  transition: all 0.2s;
+
   &:not(:last-child) {
     margin-right: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0 1rem 2rem var(--color-shadow);
+
+    .title,
+    .color {
+      color: var(--color-grey-dark);
+    }
+
+    .btn,
+    .icons-container > * {
+      opacity: 1;
+    }
   }
 }
 
@@ -30,11 +49,13 @@
 .color {
   flex: 0 0 10%;
   text-decoration: none;
+
+  transition: color 0.2s;
 }
 
 .title {
   color: var(--color-primary);
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-top: 3rem;
 }
@@ -48,33 +69,21 @@
 
 .btn {
   align-self: start;
-  margin-top: 2.5rem;
+  margin-top: 1.5rem;
   padding: 1.2rem 1.5rem;
   font-size: 1.3rem;
   font-weight: 500;
+
+  opacity: 0;
+  transition: all 0.2s;
 }
 
-.icon-new {
+.icons-container {
   position: absolute;
-  top: 5%;
-  left: 5%;
-  transform: translate(-50%, -50%);
-
-  background-color: var(--color-primary);
-  height: 5.5rem;
-  width: 5.5rem;
-
-  border: 3px solid var(--color-white);
-  border-radius: 50%;
+  top: 0;
+  right: 0;
+  // transform: translateY(-50%);
 
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &--text {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-white);
-    text-transform: uppercase;
-  }
+  flex-direction: column;
 }

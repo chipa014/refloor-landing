@@ -1,0 +1,27 @@
+.section-company {
+  display: flex;
+  justify-content: space-between;
+  padding: 10rem 14rem;
+}
+
+.image {
+  flex: 0 0 33vw;
+}
+
+.content {
+  flex: 0 0 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--color-grey-darker);
+}
+
+.text {
+  font-size: 1.6rem;
+}

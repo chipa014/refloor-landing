@@ -1,0 +1,24 @@
+.figure {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+
+  background-color: var(--color-primary);
+  height: 5.5rem;
+  width: 5.5rem;
+
+  border: 3px solid var(--color-white);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
