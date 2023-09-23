@@ -1,4 +1,5 @@
 import Features from "./Features";
+import SectionHeader from "../UI/SectionHeader";
 
 import styles from "./SectionFeatures.module.scss";
 
@@ -33,7 +34,7 @@ const FEATURES = [
 const SectionFeatures = function () {
   return (
     <section className={styles["section-features"]}>
-      <h1 className={styles.title}>Наши преимущества</h1>
+      <SectionHeader>Наши преимущества</SectionHeader>
       <Features features={FEATURES} />
     </section>
   );
