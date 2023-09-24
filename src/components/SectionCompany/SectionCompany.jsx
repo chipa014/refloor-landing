@@ -1,4 +1,3 @@
-import Image from "../../assets/img/company.jpg";
 import CompanyLink from "./CompanyLink";
 
 import styles from "./SectionCompany.module.scss";
@@ -7,7 +6,7 @@ const SectionCompany = function () {
   return (
     <section className={styles["section-company"]}>
       <img
-        src={Image}
+        src="/assets/img/company.jpg"
         alt="Счастливая семья лежит на полу"
         className={styles.image}
       />
