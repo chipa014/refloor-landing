@@ -17,15 +17,18 @@ const ScrollUpButton = function () {
     });
   }, []);
 
+  const scrollToTopHandler = function () {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className={styles.container}>
-      <figure
-        className={`${styles["scroll-up"]} ${isActive ? styles.active : ""}`}
+      <button
+        onClick={scrollToTopHandler}
+        className={`${styles.button} ${isActive ? styles.active : ""}`}
       >
-        <a href="#" className={styles.link}>
-          <Icon iconName="arrow-up2" className={styles.icon} />
-        </a>
-      </figure>
+        <Icon iconName="arrow-up2" className={styles.icon} />
+      </button>
     </div>
   );
 };
