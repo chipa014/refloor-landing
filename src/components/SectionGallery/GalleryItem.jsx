@@ -5,7 +5,7 @@ const GalleryItem = function (props) {
   return (
     <a href="#" key={image.url} className={`${styles.item} ${props.className}`}>
       <img
-        src={`/src/assets/img/${image.url}`}
+        src={`/assets/img/${image.url}`}
         alt={image.title}
         className={styles.image}
       />

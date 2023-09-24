@@ -5,7 +5,7 @@ import styles from "./Slide.module.scss";
 const Slide = function (props) {
   const { slide } = props;
   const imageStyles = {
-    backgroundImage: `linear-gradient(to right, #0009, #0009), url(/src/assets/img/${slide.image})`,
+    backgroundImage: `linear-gradient(to right, #0009, #0009), url(/assets/img/${slide.image})`,
     // backgroundImage: `url(/src/assets/img/${slide.image})`,
   };
   return (

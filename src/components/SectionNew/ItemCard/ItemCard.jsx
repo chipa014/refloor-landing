@@ -12,7 +12,7 @@ const ItemCard = function (props) {
       <div href="#" className={styles["img-container"]}>
         <a href="#" className={styles["img-link"]}>
           <img
-            src={`/src/assets/img/${itemData.src}`}
+            src={`/assets/img/${itemData.src}`}
             alt={`${itemData.title} ${itemData.color}`}
             className={styles.img}
           />
