@@ -9,13 +9,11 @@ import SectionGallery from "./components/SectionGallery/SectionGallery";
 import SectionNew from "./components/SectionNew/SectionNew";
 import SectionSlides from "./components/SectionSlides/SectionSlides";
 
-import styles from "./App.module.scss";
-
 function App() {
   return (
     <Fragment>
       <Header />
-      <main className={styles.main}>
+      <main>
         <SectionSlides />
         <SectionFeatures />
         <SectionGallery />

@@ -7,7 +7,7 @@
 
 .input {
   border: none;
-  background-color: var(--color-grey-light);
+  background-color: var(--color-grey-light-2);
   padding: 1rem 1.5rem;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -30,6 +30,8 @@
   background-color: transparent;
   border: none;
   margin-left: -4rem;
+
+  cursor: pointer;
 }
 
 .icon {

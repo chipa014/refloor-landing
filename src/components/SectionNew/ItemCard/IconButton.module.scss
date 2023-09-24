@@ -27,10 +27,10 @@
     }
 
     &:hover {
-      background-color: var(--color-grey-light);
+      background-color: var(--color-grey-light-2);
 
       .icon {
-        fill: var(--color-grey-dark);
+        fill: var(--color-grey-dark-1);
       }
     }
   }
@@ -45,10 +45,10 @@
     }
 
     &:hover {
-      background-color: var(--color-primary-medium-dark);
+      background-color: var(--color-primary-dark-1);
 
       .icon {
-        fill: var(--color-grey-light);
+        fill: var(--color-grey-light-2);
       }
     }
   }

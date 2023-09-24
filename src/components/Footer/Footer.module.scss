@@ -1,5 +1,5 @@
 .footer {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-primary-dark-3);
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -12,13 +12,13 @@
   align-items: center;
 
   font-size: 1.4rem;
-  color: var(--color-grey-medium-light);
+  color: var(--color-grey-light-1);
 }
 
 .link {
   display: inline-block;
   text-decoration: none;
-  color: var(--color-grey-light);
+  color: var(--color-grey-light-2);
   letter-spacing: 0;
 
   transition: all 0.2s;
