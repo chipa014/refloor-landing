@@ -4,7 +4,7 @@ const Logo = function () {
   return (
     <a href="#" className={styles.container}>
       <img
-        src={"/src/assets/img/logo.jpg"}
+        src={require("/src/assets/img/logo.jpg")}
         alt="Домашняя страница"
         className={styles.logo}
       />
