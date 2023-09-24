@@ -8,10 +8,12 @@
   --color-primary: #75b531;
   --color-primary-medium-dark: #69a32c;
   --color-primary-dark: #527f22;
+  --color-primary-darker: #466d1d;
   --color-black: #000;
   --color-grey-darker: #333;
   --color-grey-dark: #555;
   --color-grey: #888;
+  --color-grey-medium-light: #aaa;
   --color-grey-light: #eee;
   --color-grey-lighter: #f8f8f8;
   --color-white: #fff;

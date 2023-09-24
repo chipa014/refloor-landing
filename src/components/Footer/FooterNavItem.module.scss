@@ -1,0 +1,22 @@
+.nav-item {
+  text-decoration: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+
+  padding: 1.5rem 3rem;
+  border-radius: 2px;
+
+  transform: translateY(0);
+  background-color: inherit;
+  transition: all 0.2s;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    background-color: var(--color-primary-medium-dark);
+  }
+}

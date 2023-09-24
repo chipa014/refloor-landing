@@ -1,0 +1,30 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 1.4rem;
+  color: var(--color-grey-medium-light);
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--color-grey-light);
+  letter-spacing: 0;
+
+  transition: all 0.2s;
+
+  &:hover {
+    color: var(--color-white);
+    letter-spacing: 0.5px;
+  }
+}
