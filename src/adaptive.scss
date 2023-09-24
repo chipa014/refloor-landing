@@ -1,0 +1,48 @@
+@mixin respond($argument) {
+  @if $argument == touchscreen {
+    @media only screen and (hover: none) {
+      @content;
+    }
+  }
+
+  @if $argument == big {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $argument == medium {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $argument == medium-small {
+    @media only screen and (max-width: 50em) {
+      @content;
+    }
+  }
+  @if $argument == small {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $argument == smaller {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $argument == smallest {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    }
+  }
+  @if $argument == tiny {
+    @media only screen and (max-width: 25em) {
+      @content;
+    }
+  }
+  @if $argument == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

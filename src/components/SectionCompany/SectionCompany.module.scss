@@ -1,11 +1,26 @@
+@import "../../adaptive.scss";
+
 .section-company {
   display: flex;
   justify-content: space-between;
   padding: 10rem 14rem;
+
+  @include respond(big) {
+    padding: 10rem 10rem;
+  }
 }
 
 .image {
-  flex: 0 0 33vw;
+  flex: 0 1.5 33vw;
+
+  @include respond(big) {
+    max-width: 50%;
+    margin-right: 5rem;
+  }
+
+  @include respond(medium) {
+    display: none;
+  }
 }
 
 .content {
@@ -14,14 +29,30 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+
+  @include respond(medium) {
+    flex: 0 0 80%;
+  }
+
+  @include respond(small) {
+    flex: 1;
+  }
 }
 
 .title {
   font-size: 3rem;
   font-weight: 500;
   color: var(--color-grey-dark-2);
+
+  @include respond(medium) {
+    margin-bottom: 3rem;
+  }
 }
 
 .text {
   font-size: 1.6rem;
+
+  @include respond(medium) {
+    margin-bottom: 3rem;
+  }
 }

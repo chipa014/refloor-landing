@@ -1,6 +1,25 @@
+@import "../../adaptive.scss";
+
 .nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 
   margin-bottom: 3rem;
+
+  @include respond(medium-small) {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @include respond(smallest) {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
 }

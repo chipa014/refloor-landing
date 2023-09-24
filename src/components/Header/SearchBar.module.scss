@@ -1,8 +1,18 @@
+@import "../../adaptive.scss";
+
 .search {
   display: flex;
   align-items: center;
-  flex: 0 0 30%;
-  //   margin-left: 4rem;
+  flex: 0 0 25%;
+
+  @include respond(medium) {
+    flex: 0 0 60%;
+  }
+
+  @include respond(smaller) {
+    flex: 0 0 90%;
+    margin-top: 2rem;
+  }
 }
 
 .input {

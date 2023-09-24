@@ -1,3 +1,5 @@
+@import "../../adaptive.scss";
+
 .main-container {
   height: 30vw;
   position: relative;
@@ -6,6 +8,26 @@
   &:hover .btn {
     opacity: 1;
   }
+
+  @include respond(medium) {
+    height: 40em;
+  }
+
+  // @include respond(small) {
+  //   height: 50vw;
+  // }
+
+  @include respond(smaller) {
+    height: 50em;
+  }
+
+  // @include respond(smallest) {
+  //   height: 80vw;
+  // }
+
+  // @include respond(tiny) {
+  //   height: 100vw;
+  // }
 }
 
 .btn {
@@ -22,5 +44,23 @@
 
   &-right {
     left: 97%;
+  }
+
+  @include respond(touchscreen) {
+    opacity: 1;
+  }
+
+  @include respond(medium-small) {
+    transform: translateY(-50%);
+
+    &-left {
+      transform: translateY(-50%);
+      left: 2%;
+    }
+
+    &-right {
+      transform: translate(-100%, -50%);
+      left: 98%;
+    }
   }
 }

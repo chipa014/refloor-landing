@@ -1,3 +1,5 @@
+@import "../../adaptive.scss";
+
 .nav-item {
   text-decoration: none;
   color: var(--color-white);
@@ -5,18 +7,19 @@
   font-size: 1.6rem;
 
   padding: 1.5rem 3rem;
+  margin: 0 0.5rem;
   border-radius: 2px;
 
   transform: translateY(0);
   background-color: inherit;
   transition: all 0.2s;
 
-  &:not(:last-child) {
-    margin-right: 1rem;
-  }
-
   &:hover {
     transform: translateY(-0.3rem);
-    background-color: var(--color-primary-dark-1);
+    background-color: var(--color-primary-dark-2);
+  }
+
+  @include respond(medium-small) {
+    margin: 0;
   }
 }

@@ -1,8 +1,11 @@
+@import "../../../adaptive.scss";
+
 .nav-item {
   color: var(--color-grey-dark-2);
 
   position: relative;
   display: flex;
+  justify-content: center;
 
   transition: color 0.2s;
 
@@ -11,7 +14,15 @@
 
     & .dropdown {
       display: flex;
+
+      @include respond(touchscreen) {
+        display: none;
+      }
     }
+  }
+
+  @include respond(smallest) {
+    flex: 0 0 50%;
   }
 }
 

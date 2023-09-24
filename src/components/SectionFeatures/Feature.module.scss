@@ -11,17 +11,11 @@
   text-decoration: none;
   color: var(--color-grey);
 
-  transform: translateY(0);
-  text-shadow: none;
+  transform: translateY(0) scale(1);
   transition: all 0.2s;
 
   &:hover {
-    transform: translateY(-1rem);
-    text-shadow: 0 1rem 2rem var(--color-shadow);
-
-    .icon {
-      filter: drop-shadow(0 1rem 2rem var(--color-shadow));
-    }
+    transform: translateY(-1rem) scale(1.05);
   }
 }
 
@@ -32,7 +26,6 @@
   width: 5rem;
   height: 5rem;
 
-  filter: none;
   transition: all 0.2s;
 
   transform: translateY(-1rem);
