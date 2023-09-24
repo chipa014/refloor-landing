@@ -20,7 +20,7 @@ const Footer = function () {
           Редизайн лендинга Refloor от{" "}
           <a
             className={styles.link}
-            href="https://novosibirsk.hh.ru/resume/51a1b225ff0c58c7a20039ed1f424162626273"
+            href="https://drive.google.com/file/d/1_D5tmiszgKQMJGBe0-jXO5jnvi-7v9Xi/view?usp=sharing"
           >
             Александра Трушина
           </a>

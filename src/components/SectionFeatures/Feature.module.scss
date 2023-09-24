@@ -4,7 +4,9 @@
 
   display: grid;
   background-color: transparent;
+  grid-template-columns: -webkit-min-content 1fr;
   grid-template-columns: min-content 1fr;
+  grid-template-rows: -webkit-min-content 1fr;
   grid-template-rows: min-content 1fr;
   gap: 2rem;
 

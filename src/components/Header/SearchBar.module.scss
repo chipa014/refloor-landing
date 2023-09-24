@@ -31,6 +31,22 @@
     padding: 1.5rem 1.5rem;
   }
 
+  &::-webkit-input-placeholder {
+    color: var(--color-grey);
+  }
+
+  &::-moz-placeholder {
+    color: var(--color-grey);
+  }
+
+  &:-ms-input-placeholder {
+    color: var(--color-grey);
+  }
+
+  &::-ms-input-placeholder {
+    color: var(--color-grey);
+  }
+
   &::placeholder {
     color: var(--color-grey);
   }
