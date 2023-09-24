@@ -40,7 +40,8 @@
       @content;
     }
   }
-  @if $argument == big-desktop {
+
+  @if $argument == huge {
     @media only screen and (min-width: 112.5em) {
       @content;
     }
